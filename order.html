@@ -1,136 +1,285 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Costume Online | Order</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
-    <script src="assets/jquery-3.6.0.min.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!--Import jQuery-->
+  <script src="assets/jquery-3.6.0.min.js"></script>
+  <!--Import additional page styling-->
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-    <nav id="nav">
-        <div class="nav-logo">
-            <a href="index.html"><img src="assets/icon/logo-img.png">KostumKu<span dot>.</span></a>
-        </div>
-        <div class="nav-link">
-            <a href="index.html">Beranda</a>
-            <a href="help.html">Bantuan</a>
-            <a href="order.html">Order</a>
-        </div>
-    </nav>
-    <div class="container">
-        <main>
-            <div class="order-wrapper">
-                <div class="terms-wrapper">
-                    <h2>Ketentuan</h3>
-                    <p>
-                        <strong>
-                            ** Proses penempahan akan dilakukan setelah peninjauan dari tim kami.
-                            Apabila proses akan dilakukan, tim kami akan menghubungi Anda.
-                            Sebelum mengunggah, perhatikan hal-hal dibawah ini.
-                        </strong>
-                        <br>
-                        <br>
-                        <ul>
-                            <li>Format file gambar diunggah dalam bentuk PNG, JPG, JPEG, PDF.</li>
-                            <li>Ukuran file gambar tidak melebihi 10MB.</li>
-                            <li>
-                                Mohon agar tidak mengunggah gambar desain yang berbau SARA, kekerasan atau pornografi.
-                                Tim kami berhak untuk menolak desain yang melanggar aturan tersebut.
-                            </li>
-                            <li>Hak cipta atas gambar yang diunggah tidak menjadi tanggung jawab dari pihak tim kami.</li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="form-wrapper">
-                    <h2>Pesan Kaos</h2>
-                    <form action="" autocomplete="off">
-                        <div class="input-group">
-                            <label for="nama">Nama<span red>*</span></label>
-                            <input type="text" id="nama" placeholder="Nama" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="email">E-Mail<span red>*</span></label>
-                            <input type="email" id="email" placeholder="E-mail" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="alamat">Alamat<span red>*</span></label>
-                            <input type="text" id="alamat" placeholder="Alamat" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="nomor_hp">Nomor HP / Whatsapp<span red>*</span></label>
-                            <input type="text" id="nomor_hp" placeholder="Nomor HP / WA" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="ukuran">Ukuran<span red>*</span></label>
-                            <select name="ukuran" id="ukuran" required>
-                                <option value="pilih_ukuran">-- Pilih Ukuran --</option>
-                                <option value="XS">XS</option>
-                                <option value="S">S</option>
-                                <option value="M">M</option>
-                                <option value="L">L</option>
-                                <option value="XL">XL</option>
-                                <option value="XXL">XXL</option>
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <label for="warna">Warna<span red>*</span></label>
-                            <input type="color" name="warna" id="warna">
-                        </div>
-                        <div class="input-group">
-                            <label for="jumlah_pesanan">Jumlah Pesanan<span red>*</span></label>
-                            <input type="text" name="jumlah_pesanan" id="jumlah_pesanan" placeholder="Jumlah Pesanan" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="contoh_desain">Contoh Desain</label>
-                            <input type="file" name="contoh_desain" id="contoh_desain">
-                        </div>
-                        <div class="input-group">
-                            <label for="deskripsi_desain">Deskripsi Desain</label>
-                            <textarea name="deskripsi_desain" id="deskripsi_desain" cols="30" rows="10"></textarea>
-                        </div>
-                        <!-- <button type="submit" onclick="return confirm('Yakin mengunggah data ?');" href="abc.html">Unggah</button> -->
-                        <a submit_ href="abc.html" class="submit_" onclick="return confirm('Yakin mengunggah data ?');">Unggah</a>
-                    </form>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="footer-content">
-                <h2>Kontak</h2>
-                <div>
-                    <img src="assets/icon/home.png">
-                    <p>Nama Perusahaan: PT FARMA.XXXX</p>
-                </div>
-                <div>
-                    <img src="assets/icon/email.png">
-                    <p>E-mail: info@kostumku.id</p>
-                </div>
-                <div>
-                    <img src="assets/icon/phone.png">
-                    <p>Nomor Telepon: 021-7252-87xx</p>
-                </div>
-                <div>
-                    <img src="assets/icon/address.png">
-                    <p>
-                        Jl. Banda Aceh - Medan, Lhokseumawe, Muara Satu, Blang Pulo
-                    </p>
-                </div>
-            </div>
-            <div class="footer-content">
-                <h2>Payment Gateway</h2>
-                <div>
-                    <img src="assets/icon/payment_gateway1.png">
-                    <img src="assets/icon/payment_gateway2.png">
-                    <img src="assets/icon/payment_gateway3.png">
-                    <img src="assets/icon/payment_gateway4.png">
-                    <img src="assets/icon/go-pay.png">
-                </div>
-            </div>
-        </footer>
-    </div>
 
+<body>
+
+  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper white">
+      <a href="index.html" class="brand-logo left grey-text text-darken-2">KostumKu</a>
+      <ul id="nav-mobile" class="right">
+        <li><a href="index.html" class="grey-text text-darken-2 hide-on-small-only">Beranda<i class="material-icons left">home</i></a></li>
+        <li><a href="help.html" class="grey-text text-darken-2 hide-on-small-only">Bantuan<i class="material-icons left">help</i></a></li>
+        <li><a href="order.html" class="grey-text text-darken-2 hide-on-small-only">Pesan<i class="material-icons left">payment</i></a></li>
+        <li><a href="#" data-target="slide-out" class="sidenav-trigger grey-text text-darken-2 show-on-large"><i class="material-icons">menu</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+  <!-- Mobile support nav -->
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="">
+      </div>
+      <a href="#"><img class="circle" src="" alt="User Image"></a>
+      <span class="grey-text text-darken-2 name">John Doe</span>
+      <span class="grey-text text-darken-2 email">jdandturk@gmail.com</span>
+    </div></li>
+    <li><div class="divider"></div></li>
+    <li><a href="index.html" class="grey-text text-darken-2 hide-on-med-and-up">Beranda<i class="material-icons left">home</i></a></li>
+        <li><a href="help.html" class="grey-text text-darken-2 hide-on-med-and-up">Bantuan<i class="material-icons left">help</i></a></li>
+        <li><a href="order.html" class="grey-text text-darken-2 hide-on-med-and-up">Pesan<i class="material-icons left">payment</i></a></li>
+  </ul>
+
+  <!-- Order content -->
+  <div class="container center">
+      <h4 class="grey-text text-darken-3 left-align">Desain Kaos dari Kami</h4>
+      <div class="row">
+          <div class="col s8 m4 l3 offset-s2">
+              <div class="card z-depth-2">
+                  <div class="card-image">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/022/250/114/large/rebecca-reynolds-screenshot-2019-09-28-at-15-45-40.jpg?1574699859" alt="a Shirt Image">
+                    <span class="card-title">Desain #1</span>
+                    <a href="#" class="btn-floating btn-large halfway-fab waves-effect waves-light pulse grey darken-3"><i class="material-icons">payment</i></a>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Kriegz</span>
+                    <p>
+                        Kamu bisa request warna berbeda untuk kaos ini ya. <br> <br>
+                        <span class="red-text">*</span>sesuai dengan stok yang tersedia
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s8 m4 l3 offset-s2">
+              <div class="card z-depth-2">
+                  <div class="card-image">
+                    <img src="https://pbs.twimg.com/media/B7AkjXeCIAAh-Pk.png" alt="a Shirt Image">
+                    <span class="card-title">Desain #2</span>
+                    <a href="#" class="btn-floating btn-large halfway-fab waves-effect waves-light pulse grey darken-3"><i class="material-icons">payment</i></a>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Over the Limit</span>
+                    <p>
+                        Kamu bisa request warna berbeda untuk kaos ini ya. <br> <br>
+                        <span class="red-text">*</span>sesuai dengan stok yang tersedia
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s8 m4 l3 offset-s2">
+              <div class="card z-depth-2">
+                  <div class="card-image">
+                    <img src="https://cdn.shopify.com/s/files/1/0228/9021/products/rwby-blake-belladonna-vintage-split-t-shirt-176973_large.gif?v=1619056688" alt="a Shirt Image">
+                    <span class="card-title">Desain #3</span>
+                    <a href="#" class="btn-floating btn-large halfway-fab waves-effect waves-light pulse grey darken-3"><i class="material-icons">payment</i></a>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Halfway Dimension Pass</span>
+                    <p>
+                        Kamu bisa request warna berbeda untuk kaos ini ya. <br> <br>
+                        <span class="red-text">*</span>sesuai dengan stok yang tersedia
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="col s8 m4 l3 offset-s2 hide-on-med-and-down">
+            <div class="card z-depth-2">
+                <div class="card-image">
+                  <img src="https://m.media-amazon.com/images/I/B17H79+I8tS._CLa%7C2140%2C2000%7C91zNvSGgI3L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX679._SX._UX._SY._UY_.png" alt="a Shirt Image">
+                  <span class="card-title">Desain #4</span>
+                  <a href="#" class="btn-floating btn-large halfway-fab waves-effect waves-light pulse grey darken-3"><i class="material-icons">payment</i></a>
+                </div>
+                <div class="card-content">
+                  <span class="card-title">Homeland Outlanders</span>
+                  <p>
+                      Kamu bisa request warna berbeda untuk kaos ini ya. <br> <br>
+                      <span class="red-text">*</span>sesuai dengan stok yang tersedia
+                  </p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="divider"></div>
+      </div>
+  </div>
+
+  <div class="container">
+      <h4 class="grey-text text-darken-3 right-align hide-on-small-only">Pesan dengan Desain Sendiri</h4>
+      <h4 class="grey-text text-darken-3 center-align show-on-small-only hide-on-med-and-up">Pesan dengan Desain Sendiri</h4>
+      <div class="col s12 m6 grey-text text-darken-3">
+        <h5 class="left-align">Ketentuan</h5>
+        <p>
+            <span class="red-text">**</span> Proses penempahan akan dilakukan setelah peninjauan dari tim kami.
+            Apabila proses akan dilakukan, tim kami akan menghubungi Anda. <br> <br>
+            Sebelum mengunggah, mohon perhatikan hal-hal dibawah ini:
+        </p>
+        <ul>
+            <li>
+                <p>
+                    <i class="material-icons left">chevron_right</i> Format gambar yang diunggah harus dalam format ekstensi <span class="red-text">.png</span>,
+                    <span class="red-text">.jpg</span>, <span class="red-text">.jpeg</span>, <span class="red-text">.pdf</span>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <i class="material-icons left">chevron_right</i> Ukuran file yang diunggah tidak melebihi 50MB.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <i class="material-icons left">chevron_right</i> Mohon agar tidak mengunggah file yang berbau SARA, kekerasan ataupun pornografi.
+                    Tim kami berhak untk menolak desain yang melanggar aturan dan/atau kebijakan ini.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <i class="material-icons left">chevron_right</i> Pihak Perusahaan dan segenap tim kami tidak bertanggung jawab atas 
+                    hak cipta dari suatu gambar yang diunggah.
+                </p>
+            </li>
+        </ul>
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+          <div class="container">
+            <form action="" class="form-wrapper grey darken-4 z-depth-3 center grey-text text-lighten-2">
+                <h4>Pesan</h4>
+                <div class="input-field">
+                    <i class="material-icons prefix">account_box</i>
+                    <label for="name">Nama<span class="red-text">*</span></label>
+                    <input type="text" name="name" id="name" class="grey-text text-lighten-2">
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <label for="email">Email<span class="red-text">*</span></label>
+                    <input type="text" name="email" id="email" class="grey-text text-lighten-2">
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">location_on</i>
+                    <label for="address">Alamat<span class="red-text">*</span></label>
+                    <input type="text" name="address" id="address" class="grey-text text-lighten-2">
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">phone_android</i>
+                    <label for="phone_number">Nomor HP / Whatsapp<span class="red-text">*</span></label>
+                    <input type="text" name="phone_number" id="phone_number" class="grey-text text-lighten-2">
+                </div>
+                <div class="input-field file-field">
+                    <div class="btn grey lighten-2 grey-text text-darken-3">
+                        <i class="material-icons left">folder</i>
+                        <span>Contoh Desain<span class="red-text">*</span></span>
+                        <input type="file" name="design_example" id="design_example">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input type="text" class="file-path validate">
+                    </div>
+                </div>
+                <i class="material-icons prefix">accessibility</i>
+                <div class="input-field grey lighten-2">
+                    <select name="size" id="size">
+                        <option value="0" disabled selected class="text-grey text-lighten-2">-- Pilih Ukuranmu --</option>
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="4">XL</option>
+                        <option value="5">XXL</option>
+                    </select>
+                    <label for="size">Ukuran<span class="red-text">*</span></label>
+                </div>
+                <!-- <div class="input-field">
+                    <p>color</p>
+                </div> -->
+                <div class="input-field">
+                    <i class="material-icons prefix">control_point</i>
+                    <label for="order_amount">Jumlah Pesanan<span class="red-text">*</span></label>
+                    <input type="number" name="order_amount" id="order_amount" class="grey-text text-lighten-2" min="1" max="1000">
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">note</i>
+                    <label for="order_note">Catatan (opsional)</label>
+                    <textarea name="order_note" id="order_note" class="materialize-textarea grey-text text-lighten-2" data-length="500"></textarea>
+                </div>
+                <h6 class="grey-text text-lighten-2 center">Pesan Sekarang</h6>
+                <button type="submit" class="btn-floating btn-large waves-effect waves-light grey lighten-2 pulse"><i class="material-icons grey-text text-darken-3">shopping_cart</i></button>
+            </form>
+          </div>
+      </div>
+  </div>
+
+  <footer class="footer-page grey darken-4 grey-text text-lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col m9 hide-on-small-only valign-wrapper">
+          <h4>KostumKu</h4>
+        </div>
+        <div class="col s12 center show-on-small-only hide-on-med-and-up">
+          <h4>KostumKu</h4>
+        </div>
+        <div class="col m3 hide-on-small-only">
+          <ul>
+            <li class="">
+              <a href="#" class="grey-text text-lighten-1">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-1">Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-1">YouTube</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-1">Telegram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col s12 center show-on-small-only hide-on-med-and-up">
+          <ul>
+            <li class="">
+              <a href="#" class="grey-text text-lighten-1">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-1">Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-1">YouTube</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-1">Telegram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center-align">
+        KostumKu © 2021. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="assets/script.js"></script>
 </body>
+
 </html>

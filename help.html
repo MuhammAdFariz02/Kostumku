@@ -1,82 +1,149 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Costume Online | Bantuan</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
-    <script src="assets/jquery-3.6.0.min.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!--Import jQuery-->
+  <script src="assets/jquery-3.6.0.min.js"></script>
+  <!--Import additional page styling-->
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-    <nav id="nav">
-        <div class="nav-logo">
-            <a href="index.html"><img src="assets/icon/logo-img.png">KostumKu<span dot>.</span></a>
-        </div>
-        <div class="nav-link">
-            <a href="index.html">Beranda</a>
-            <a href="#">Bantuan</a>
-            <a href="order.html">Order</a>
-        </div>
-    </nav>
-    <div class="container">
-        <main>
-            <section class="help-page-section">
-                <img src="assets/vector/3996891.jpg" class="help-page-img">
-                <div class="content-txt">
-                    <h1>Bantuan</h1>
-                    <p>
-                        Anda dapat menghubungi kami via alamat email kami. Pelayanan terbuka mulai dari jam 08:00 - 16:00 WIB.
-                        <br>
-                        <br>
-                        Anda dapat menuliskan pertanyaan Anda di bawah ini. 
-                    </p>
-                    <div class="quick-send-email">
-                        <label for="quick-send">Nama<span red>*</span></label>
-                        <input type="text" name="quick-send" id="quick-send" placeholder="Nama" required>
-                        <br>
-                        <textarea name="email-send" id="email-send" cols="80" rows="10"></textarea>
-                        <a href="#" submit_>Kirim</a>
-                        <p>* Pesan yang Anda tulis diatas akan langung dikirimkan ke alamat email kami.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-content">
-                <h2>Kontak</h2>
-                <div>
-                    <img src="assets/icon/home.png">
-                    <p>Nama Perusahaan: PT FARMA.XXXX</p>
-                </div>
-                <div>
-                    <img src="assets/icon/email.png">
-                    <p>E-mail: info@kostumku.id</p>
-                </div>
-                <div>
-                    <img src="assets/icon/phone.png">
-                    <p>Nomor Telepon: 021-7252-87xx</p>
-                </div>
-                <div>
-                    <img src="assets/icon/address.png">
-                    <p>
-                        Jl. Banda Aceh - Medan, Lhokseumawe, Muara Satu, Blang Pulo
-                    </p>
-                </div>
-            </div>
-            <div class="footer-content">
-                <h2>Payment Gateway</h2>
-                <div>
-                    <img src="assets/icon/payment_gateway1.png">
-                    <img src="assets/icon/payment_gateway2.png">
-                    <img src="assets/icon/payment_gateway3.png">
-                    <img src="assets/icon/payment_gateway4.png">
-                    <img src="assets/icon/go-pay.png">
-                </div>
-            </div>
-        </footer>
-    </div>
 
+<body>
+
+  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper white">
+      <a href="index.html" class="brand-logo left grey-text text-darken-2">KostumKu</a>
+      <ul id="nav-mobile" class="right">
+        <li><a href="index.html" class="grey-text text-darken-2 hide-on-small-only">Beranda<i class="material-icons left">home</i></a></li>
+        <li><a href="help.html" class="grey-text text-darken-2 hide-on-small-only">Bantuan<i class="material-icons left">help</i></a></li>
+        <li><a href="order.html" class="grey-text text-darken-2 hide-on-small-only">Pesan<i class="material-icons left">payment</i></a></li>
+        <li><a href="#" data-target="slide-out" class="sidenav-trigger grey-text text-darken-2 show-on-large"><i class="material-icons">menu</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+  <!-- Mobile support nav -->
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="">
+      </div>
+      <a href="#"><img class="circle" src="" alt="User Image"></a>
+      <span class="grey-text text-darken-2 name">John Doe</span>
+      <span class="grey-text text-darken-2 email">jdandturk@gmail.com</span>
+    </div></li>
+    <li><div class="divider"></div></li>
+    <li><a href="index.html" class="grey-text text-darken-2 hide-on-med-and-up">Beranda<i class="material-icons left">home</i></a></li>
+        <li><a href="help.html" class="grey-text text-darken-2 hide-on-med-and-up">Bantuan<i class="material-icons left">help</i></a></li>
+        <li><a href="order.html" class="grey-text text-darken-2 hide-on-med-and-up">Pesan<i class="material-icons left">payment</i></a></li>
+  </ul>
+
+  <!-- Help content -->
+  <div class="container">
+    <div class="center">
+        <img src="assets/img/img5.jpg" alt="Helpdesk Image" class="responsive-img">
+    </div>
+    <h4 class="center">Layanan Bantuan</h4>
+    <h6 class="center">
+        Layanan bantuan kami terbuka selama jam kerja (08:30 - 18:00).
+        Anda dapat menghubungi kami pada jam tersebut.
+    </h6>
+    <div class="divider"></div>
+    <h5 class="center">Masukan Untuk KostumKu</h5>
+    <h6 class="center">
+        Anda ingin memberikan <em>saran</em>, <em>kritik</em>, <em>komplain</em>, dan sebagainya ? <br>
+        Anda dapat menuliskannya di bawah ini. Cukup sertakan nama dan alamat email kamu dan pesan yang ingin kamu sampaikan ya.
+        Kami akan membalas pesan Anda secepat yang kami bisa.
+    </h6>
+
+    <!-- Message form -->
+    <div class="container">
+        <form action="" class="form-wrapper grey darken-4 z-depth-3 center grey-text text-lighten-2">
+            <h4>Masukan</h4>
+            <div class="input-field">
+                <label for="name">Nama</label>
+                <input type="text" name="name" id="name" class="grey-text text-lighten-2">
+            </div>
+            <div class="input-field">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="grey-text text-lighten-2">
+            </div>
+            <div class="input-field">
+                <label for="message">Pesan</label>
+                <textarea name="message" id="message" class="materialize-textarea grey-text text-lighten-2"></textarea>
+            </div>
+            <h6 class="grey-text text-lighten-2 center">Kirim</h6>
+            <button type="submit" class="btn-floating btn-large waves-effect waves-light grey lighten-2 pulse"><i class="material-icons grey-text text-darken-3">send</i></button>
+        </form>
+    </div>
+    <p class="center">
+        <u><b>#KepuasanKonsumen</b></u> merupakan motto kami dan kami akan selalu berusaha untuk mewujudkan dan menjaga konsistensinya.
+    </p>
+  </div>
+
+  <footer class="footer-page grey darken-4 grey-text text-lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col m9 hide-on-small-only valign-wrapper">
+          <h4>KostumKu</h4>
+        </div>
+        <div class="col s12 center show-on-small-only hide-on-med-and-up">
+          <h4>KostumKu</h4>
+        </div>
+        <div class="col m3 hide-on-small-only">
+          <ul>
+            <li class="">
+              <a href="#" class="grey-text text-lighten-1">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-1">Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-1">YouTube</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-1">Telegram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col s12 center show-on-small-only hide-on-med-and-up">
+          <ul>
+            <li class="">
+              <a href="#" class="grey-text text-lighten-1">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-1">Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-1">YouTube</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-1">Telegram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center-align">
+        KostumKu © 2021. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="assets/script.js"></script>
 </body>
+
 </html>
