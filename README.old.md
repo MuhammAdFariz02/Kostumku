@@ -1,3 +1,0 @@
-## Kostumku
-
-Website yang menawarkan berbagai barang berupa pakaian berkualitas dan nyaman dipakai. Anda dapat memesan baju dengan desain dari Anda sendiri ataupun desain yang sudah kami sediakan...
