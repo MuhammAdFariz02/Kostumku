@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+main {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media (min-width: 993px) {
+  main {
+    max-width: 80%;
+  }
+}
+
+/* Helpers */
+.flex {
+  display: flex;
+}
+
+.flex-content-center {
+  place-content: center;
+}
+
+.flex-items-center {
+  place-items: center;
+}
+
+.martop-sm {
+  margin-top: 6px !important;
+}
+
+.martop-md {
+  margin-top: 14px !important;
+}
+
+.martop-lg {
+  margin-top: 30px !important;
+}
