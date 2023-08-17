@@ -1,0 +1,23 @@
+{
+  "name": "kostumku",
+  "version": "1.0.0",
+  "description": "E-commerce app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hawariMuflihMunte/Kostumku.git"
+  },
+  "keywords": [
+    "kostumku",
+    "kostum-ku"
+  ],
+  "author": "Muhammad Fariz Rizki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hawariMuflihMunte/Kostumku/issues"
+  },
+  "homepage": "https://github.com/hawariMuflihMunte/Kostumku#readme"
+}
