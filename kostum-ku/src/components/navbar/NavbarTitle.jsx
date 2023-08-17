@@ -5,6 +5,8 @@ function NavbarTitle() {
     section: {
       display: 'flex',
       padding: '0',
+      placeContent: 'center',
+      placeItems: 'center'
     },
     img: {
       maxWidth: '36px',
