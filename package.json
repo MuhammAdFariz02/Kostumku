@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/hawariMuflihMunte/Kostumku/issues"
   },
-  "homepage": "https://github.com/hawariMuflihMunte/Kostumku#readme"
+  "homepage": "https://github.com/hawariMuflihMunte/Kostumku#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
